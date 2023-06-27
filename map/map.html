@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+
+    <!----favicon-->
+    <link href="images/HSLogo-05W.png" rel="icon" type="icon/png" />
+
+    <!--custom css-->
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!--font css-->
+    <link href="css/font.css" rel="stylesheet"/>
+
+    <!-- map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+
+    <!--icon css-->
+    <link href="css/all.min.css" rel="stylesheet"/>
+
+    <!-- media -->
+    <link href="css/media.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="row">
+        <div class="menu-width w-xs-toggle">
+            <div class="ap-logo">
+                <a href="javascript:;">
+                    <img src="images/logo (1).png" />
+                </a>
+            </div>
+            <nav class="w-xs-toggle">
+                <div class="main-menu">
+                    <h4>Main</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="../index.html" class="row">
+                                <div>
+                                    <i class="fa-solid fa-table-columns"></i>
+                                </div>
+                                <div>
+                                    Dashboard
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div>
+                                    Application
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <h4>Products</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-box-open"></i>
+                                </div>
+                                <div>
+                                    Products
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-brands fa-dropbox"></i>
+                                </div>
+                                <div>
+                                    create products
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-dolly"></i>
+                                </div>
+                                <div>
+                                    import Products
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-tag"></i>
+                                </div>
+                                <div>
+                                    brands
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-solar-panel"></i>
+                                </div>
+                                <div>
+                                    category
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-biohazard"></i>
+                                </div>
+                                <div>
+                                    sub category
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-barcode"></i>
+                                </div>
+                                <div>
+                                    printbarcode
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu ">
+                    <h4>sales</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </div>
+                                <div>
+                                    sales
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </div>
+                                <div>
+                                    invoices
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-file-circle-plus"></i>
+                                </div>
+                                <div>
+                                    sales return
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-pager"></i>
+                                </div>
+                                <div>
+                                    quotation
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-signs-post"></i>
+                                </div>
+                                <div>
+                                    pos
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+                                <div>
+                                    transfer
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <div>
+                                    return
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <h4>Purchases</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </div>
+                                <div>
+                                    Purchases
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </div>
+                                <div>
+                                    import Purchases
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-file-circle-plus"></i>
+                                </div>
+                                <div>
+                                    Purchases order
+                                </div>
+                            </a>
+                        </li>
+                    
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-pager"></i>
+                                </div>
+                                <div>
+                                    Purchases return
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <h4>Finance & Accounts</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-regular fa-newspaper"></i>
+                                </div>
+                                <div>
+                                    expense
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <h4>Peoples</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div>
+                                    customers
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                                <div>
+                                    suppliers
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-user-plus"></i>
+                                </div>
+                                <div>
+                                    users
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-store"></i>
+                                </div>
+                                <div>
+                                    stores
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <h4>Reports</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </div>
+                                <div>
+                                    sales Reports
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </div>
+                                <div>
+                                    Purchase Report
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-regular fa-credit-card"></i>
+                                </div>
+                                <div>
+                                    invorty Reports
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-sim-card"></i>
+                                </div>
+                                <div>
+                                    invoices Reports
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-chart-bar"></i>
+                                </div>
+                                <div>
+                                    Purchases reports
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-bars-progress"></i>
+                                </div>
+                                <div>
+                                    suppliers reports
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <div>
+                                    customers reports
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu">
+                    <h4>User Management</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div>
+                                    Manage users
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="main-menu">
+                    <h4>pages</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <div>
+                                    authentication
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-file-shield"></i>
+                                </div>
+                                <div>
+                                    error pages
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li  active">
+                            <a href="map/map.html" class="row">
+                                <div>
+                                    <i class="fa-regular fa-map"></i>
+                                </div>
+                                <div>
+                                    places
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-regular fa-file-powerpoint"></i>
+                                </div>
+                                <div>
+                                    blank pages
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-marker"></i>
+                                </div>
+                                <div>
+                                    component
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="main-menu">
+                    <h4>User Management</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div>
+                                    Manage users
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="main-menu">
+                    <h4>Settings</h4>
+                    <ul class="menu-ul">
+                        <li class="menu-li">
+                            <a href="javascript:;" class="row">
+                                <div>
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                                <div>
+                                    Settings
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="menu-li">
+                            <a href="../login/index.html" class="row">
+                                <div>
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                </div>
+                                <div>
+                                    log out
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="main-bg">
+            <header class="pos-fixed w-xs-12 he">
+                <div class="row nav-header w-12">
+                    <div class="row w-12 align-item">
+                        <div class="toggle-bg d-xs-none">
+                            <a href="javascript:;">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </a>
+                        </div>
+                        <div class="row i-bg w-4 d-xs-none">
+                            <div class="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="input-bg">
+                                <input type="text" placeholder="search">
+                            </div>
+                        </div>
+                        <div class="res-menu w-xs-2 w-s-2 d-xl-none">
+                        <a href="javascript:;">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        </div>
+
+                        <div class="s-logo w-xs-8 w-s-8 d-xl-none">
+                            <a href="javascript:;">
+                                <img src="images/logo (1).png" />
+                            </a>
+                        </div>
+                        <div class="user-info w-xs-2 w-s-2 d-xl-none">
+                            <a href="javascript:;">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <div class="d-xs-user">
+                                <div class="drop-box-f">
+                                    <a href="javascript:;">
+                                        <p>
+                                            myprofile
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="drop-box-f">
+                                    <a href="javascript:;">
+                                        <p>
+                                            Settings
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="drop-box-f">
+                                    <a href="../login/index.html">
+                                        <p>
+                                            log out
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row w jus-con nav-icon d-xs-none">
+                        
+                            <div>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-crop-simple"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="javascript:;">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-bell"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-gear"></i>
+                                </a>
+                            </div>
+                            <div class="row align-item">
+                                <div class="img-top">
+                                    <img src="images/_1.jpg" />
+                                </div>
+                                <div class="img-con">
+                                    <h4>
+                                        hardik rathod
+                                    </h4>
+                                    <p>
+                                        super admin
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- main body -->
+            <div id="map" style="width: 100%; height: 100vh; z-index: 1;"></div>
+        </div>
+    </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <script>
+            const map = L.map('map').setView([51.505, -0.09], 13);
+
+            const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+            const marker = L.marker([51.5, -0.09]).addTo(map)
+                .bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+
+            const circle = L.circle([51.508, -0.11], {
+                color: 'red',
+                fillColor: '#f03',
+                fillOpacity: 0.5,
+                radius: 500
+            }).addTo(map).bindPopup('I am a circle.');
+
+            const polygon = L.polygon([
+                [51.509, -0.08],
+                [51.503, -0.06],
+                [51.51, -0.047]
+            ]).addTo(map).bindPopup('I am a polygon.');
+
+
+            const popup = L.popup()
+                .setLatLng([51.513, -0.09])
+                .setContent('I am a standalone popup.')
+                .openOn(map);
+
+            function onMapClick(e) {
+                popup
+                    .setLatLng(e.latlng)
+                    .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                    .openOn(map);
+            }
+
+            map.on('click', onMapClick);
+
+</script>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".menu-li").click(function(){
+                        $(this).addClass("active").siblings(".menu-li").removeClass("active")
+                        $(this).parents(".main-menu").siblings(".main-menu").children(".menu-ul").children('.menu-li').removeClass("active")
+                    })
+
+                    $(".toggle-bg").click(function(){
+                        $(".menu-width").toggleClass("toggle")
+
+                        $(".main-bg").toggleClass("toggle")
+                        $(".nav-header").toggleClass("toggle")
+                        
+                    })
+
+                    $(".res-menu").click(function(){
+                        $("nav").toggleClass("w-xs-toggle")
+                        $(".menu-width").toggleClass("w-xs-toggle")
+                    })
+
+                    $(".user-info").click(function(){
+                        $(".d-xs-user").toggleClass("toggle")
+                    })
+                });
+            </script>
+</body>
+</html>
